@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class MainTest {
 
     @Test
-    void getNumberOfSubBreedsValidBreed() throws BreedFetcher.BreedNotFoundException {
+    void getNumberOfSubBreedsValidBreed() {
         BreedFetcherForLocalTesting mock = new BreedFetcherForLocalTesting();
 
         assertEquals(2, Main.getNumberOfSubBreeds("hound", mock));
