@@ -14,7 +14,7 @@ class MainTest {
     }
 
     @Test
-    void getNumberOfSubBreedsInvalidBreed() throws BreedFetcher.BreedNotFoundException {
+    void getNumberOfSubBreedsInvalidBreed() {
         BreedFetcherForLocalTesting mock = new BreedFetcherForLocalTesting();
 
         assertEquals(0, Main.getNumberOfSubBreeds("cat", mock));
