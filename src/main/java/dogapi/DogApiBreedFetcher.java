@@ -45,7 +45,7 @@ public class DogApiBreedFetcher implements BreedFetcher {
                 throw new BreedNotFoundException(jsonResponse.getString("message"));
             }
         } catch (IOException | JSONException e) {
-            throw new RuntimeException(e);
+            throw new BreedNotFoundException(breed);
         }
     }
     }
